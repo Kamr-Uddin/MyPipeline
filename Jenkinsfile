@@ -21,4 +21,10 @@ pipeline {
             }
         }
     }
+    post {
+        cleanup {
+            echo "Cleaning the workspace"
+            cleanWs()
+        }
+    }
 }
