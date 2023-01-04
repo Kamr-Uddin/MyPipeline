@@ -14,6 +14,10 @@ pipeline {
         stage("Deploy") {
             steps {
                 echo "Stage 3: Deploying the BWCE app..."
+                sh '''
+                    echo "This block contains multi-line steps"
+                    ls -lh
+                '''
             }
         }
     }
